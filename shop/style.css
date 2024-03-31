@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    max-width: 1280px;
+    padding-inline: 52px;
+    padding-bottom: 52px;
+    background-color: #221F1F;
+}
+
+.headline {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 32px;
+    margin-block: 40px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 22px;
+    justify-content: flex-start;
+}
+
+.product-card {
+    background-color: #221F1F;
+    border: 1px solid #bbbbbb;
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 22px;
+}
+
+.card-header {
+    display: flex;
+    gap: 12px;
+    align-items: normal;
+}
+
+.product-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-content {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.card-text-bold {
+    font-weight: 600;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.product-price {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.product-description {
+    color: #bbbbbb;
+    margin-top: 5px;
+}
+
+.loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(0 0 0);
+    border-radius: 50%;
+    border-top-color: #FFF;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.loading-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.hide {
+    display: none;
+}
